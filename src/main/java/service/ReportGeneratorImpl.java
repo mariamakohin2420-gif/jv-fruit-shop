@@ -10,13 +10,13 @@ public class ReportGeneratorImpl implements ReportGenerator {
     @Override
     public String getReport() {
         StringBuilder reportBuilder = new StringBuilder(CSV_HEADER).append(LINE_SEPARATOR);
-        for(
-        Map.Entry<String, Integer> entry :Storage.fruits.entrySet()) {
-        reportBuilder.append(entry.getKey())
+        for (Map.Entry<String, Integer> entry :
+                Storage.fruits.entrySet()) {
+            reportBuilder.append(entry.getKey())
                 .append(",")
                 .append(entry.getValue())
                 .append(LINE_SEPARATOR);
-    }
-    return reportBuilder.toString();
-}
+        }
+        return reportBuilder.toString();
+   }
 }
