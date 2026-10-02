@@ -12,7 +12,7 @@ public class PurchaseOperation implements OperationHandler {
 
         if (currentQuantity < requestedQuantity) {
             throw new IllegalArgumentException("Not enough " + fruit + " in stock! Available: "
-            +currentQuantity + ", requested: " + requestedQuantity);
+            + currentQuantity + ", requested: " + requestedQuantity);
         }
 
         Storage.fruits.put(fruit, currentQuantity - requestedQuantity);

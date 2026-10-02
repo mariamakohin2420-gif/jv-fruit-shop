@@ -4,7 +4,7 @@ import java.util.List;
 import model.FruitTransaction;
 import service.strategy.OperationStrategy;
 
-public class ShopServiceImpl implements ShopService{
+public class ShopServiceImpl implements ShopService {
     private final OperationStrategy operationStrategy;
 
     public ShopServiceImpl(OperationStrategy operationStrategy) {

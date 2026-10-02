@@ -18,5 +18,5 @@ public class ReportGeneratorImpl implements ReportGenerator {
                     .append(LINE_SEPARATOR);
         }
         return reportBuilder.toString();
-   }
+    }
 }
