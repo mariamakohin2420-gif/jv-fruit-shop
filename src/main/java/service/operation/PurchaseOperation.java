@@ -11,7 +11,7 @@ public class PurchaseOperation implements OperationHandler {
         int requestedQuantity = transaction.getQuantity();
 
         if (currentQuantity < requestedQuantity) {
-            throw new IllegalArgumentException("Not enough " + fruit + " in stock! Available: "
+            throw new RuntimeException("Not enough " + fruit + " in stock! Available: "
             + currentQuantity + ", requested: " + requestedQuantity);
         }
 
