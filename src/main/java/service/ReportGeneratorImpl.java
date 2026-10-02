@@ -13,9 +13,9 @@ public class ReportGeneratorImpl implements ReportGenerator {
         for (Map.Entry<String, Integer> entry :
                 Storage.fruits.entrySet()) {
             reportBuilder.append(entry.getKey())
-                .append(",")
-                .append(entry.getValue())
-                .append(LINE_SEPARATOR);
+                    .append(",")
+                    .append(entry.getValue())
+                    .append(LINE_SEPARATOR);
         }
         return reportBuilder.toString();
    }

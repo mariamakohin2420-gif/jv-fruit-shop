@@ -9,8 +9,8 @@ public class FileWriterImpl implements FileWriter {
     public void write(String data, String filePath) {
         try {
             Files.writeString(Paths.get(filePath), data);
-            } catch (IOException e){
-                throw new RuntimeException("Cannot write data to file: " + filePath, e);
-            }
+        } catch (IOException e) {
+            throw new RuntimeException("Cannot write data to file: " + filePath, e);
+        }
     }
 }
