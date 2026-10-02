@@ -12,7 +12,7 @@ public class DataConverterImpl implements DataConverter {
     private static final String HEADER = "type,fruit,quantity";
 
     @Override
-    public List<FruitTransaction> converToTransaction(List<String> lines) {
+    public List<FruitTransaction> convertToTransaction(List<String> lines) {
         return lines.stream()
                 .filter(line -> !line.trim().isEmpty() && !line.startsWith(HEADER))
                 .map(this::parseLine)
